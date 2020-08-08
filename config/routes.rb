@@ -23,6 +23,7 @@ def set_up_flipper
 end
 
 Rails.application.routes.draw do
+  resources :account_requests
   devise_for :users
 
   set_up_sidekiq
